@@ -31,7 +31,7 @@ julia> Pkg.activate(".")
 julia> Pkg.instantiate()
 ```
 
-**NOTE:** If an artifact produces a hash mismatch error while downloading, navigate to the 
+**Note:** If an artifact produces a hash mismatch error while downloading, navigate to the 
 local `.julia/artifacts` folder and manually set the appropriate artifact folder name. For example, the `ottawa_area_maps` artifact folder name should be `eb8d8339b55fb4b9b070eda7f3aede970ab53629`. If needed, artifacts can also be downloaded directly from their online storage locations, then unzipped, renamed, and placed in the 
 local `.julia/artifacts` folder. Online storage locations (`url`) and folder names (`git-tree-sha1`) can be found in the [Artifacts.toml](Artifacts.toml) file.
 
@@ -91,14 +91,28 @@ If this code or data is used in any work, please cite:
 ```
 [DataSet Name] provided by the United States Air Force pursuant to Cooperative Agreement Number FA8750-19-2-1000 - [dates used]
 @article{gnadt2023signal,
-  title={Signal Enhancement for Magnetic Navigation Challenge Problem},
-  author={Gnadt, Albert R. and Belarge, Joseph and Canciani, Aaron and Carl, Glenn and Conger, Lauren and Curro, Joseph and Edelman, Alan and Morales, Peter and Nielsen, Aaron P. and O'Keeffe, Michael F. and Rackauckas, Christopher V. and Taylor, Jonathan and Wollaber, Allan B.},
-  archivePrefix={arXiv},
-  doi={10.48550/arXiv.2007.12158},
-  eprint={2007.12158},
-  journal={arXiv},
-  pages={1--12},
-  url={https://doi.org/10.48550/arXiv.2007.12158},
-  year={2023}
+  title = {Signal Enhancement for Magnetic Navigation Challenge Problem},
+  author = {Gnadt, Albert R. and Belarge, Joseph and Canciani, Aaron and Carl, Glenn and Conger, Lauren and Curro, Joseph and Edelman, Alan and Morales, Peter and Nielsen, Aaron P. and O'Keeffe, Michael F. and Rackauckas, Christopher V. and Taylor, Jonathan and Wollaber, Allan B.},
+  archivePrefix = {arXiv},
+  doi = {10.48550/arXiv.2007.12158},
+  eprint = {2007.12158},
+  journal = {arXiv},
+  pages = {1--12},
+  url = {https://doi.org/10.48550/arXiv.2007.12158},
+  year = {2023}
+}
+```
+
+If this data is used in any work, please also cite:
+
+```
+[DataSet Name] provided by the United States Air Force pursuant to Cooperative Agreement Number FA8750-19-2-1000 - [dates used]
+@dataset{gnadt2023data,
+  title = {{DAF-MIT AIA Open Flight Data for Magnetic Navigation Research}},
+  author = {Gnadt, Albert R. and Belarge, Joseph and Canciani, Aaron and Conger, Lauren and Curro, Joseph and Edelman, Alan and Morales, Peter and O'Keeffe, Michael F. and Taylor, Jonathan and Jacobs, David and Rackauckas, Christopher and Carl, Glenn and Wollaber, Allan},
+  doi = {10.5281/zenodo.4271803},
+  publisher = {Zenodo},
+  url = {https://doi.org/10.5281/zenodo.4271803},
+  year = {2023}
 }
 ```
